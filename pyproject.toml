@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "SIAM"
+version = "0.1.0"
+description = ""
+authors = ["Laurent <ldmckkb@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+numpy = "^1.22.3"
+cvlib = "^0.2.7"
+matplotlib = "^3.5.2"
+opencv-python = "^4.5.5"
+opencv-python-headless = "^4.5.5"
+tensorflow-addons = "^0.16.1"
+tensorflow = "^2.8.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
