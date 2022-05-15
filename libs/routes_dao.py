@@ -4,13 +4,7 @@ import platform
 import json
 from libs import person_detector
 
-paths = {
-    "Windows": "C:/SIAM-Data",
-    "Linux": "~/SIAM",
-    "Darwin": "~/SIAM"
-}
-
-data_file_path = paths[platform.system()]
+data_file_path = os.path.expanduser("~/SIAM")
 
 
 def generate_data_file(route_name=""):
