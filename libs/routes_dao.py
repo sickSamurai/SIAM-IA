@@ -8,7 +8,7 @@ data_file_path = os.path.expanduser("~/SIAM")
 
 
 def generate_data_file(route_name=""):
-    threading.Timer(30, generate_data_file, [route_name]).start()
+    threading.Timer(15, generate_data_file, [route_name]).start()
     data_on_json = json.dumps({
         "name": route_name,
         "numberOfUsers": person_detector.detect_persons(route_name)

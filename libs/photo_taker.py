@@ -5,7 +5,7 @@ import threading
 
 def take_photo(route_name=""):
     # configure for take photos periodically
-    threading.Timer(30, take_photo, [route_name]).start()
+    threading.Timer(15, take_photo, [route_name]).start()
     # initialize the camera
     camera = cv2.VideoCapture(0)  # 0 -> index of camera
     result, image = camera.read()
