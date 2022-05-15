@@ -25,5 +25,5 @@ def generate_data_file(route_name=""):
     }
     data_on_JSON = json.dumps(route_data)
     print(data_on_JSON)
-    route_data_file = open("../routes-data.json", "w")
+    route_data_file = open("C:/SIAM-Data/routes-data.json", "w")
     route_data_file.write(data_on_JSON)
